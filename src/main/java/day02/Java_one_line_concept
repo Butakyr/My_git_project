@@ -1,0 +1,37 @@
+JAVA ONE LINE CONCEPTS
+• java file mai ek hi public class hoti hai, uske alava aur classes v ho sakti hai par public ek hi.
+• If we need to create one variable for multiple values, we need to use Array concept.
+• Int marks[] = new int[5]
+• Array can store only homogenous data, int for int array, string for string,
+• If we need to add heterogeneous data in array, we need to create object array.
+• Object a[] = new Object[5]; now we can add different data type objects.
+• Array is fixed in size, which we define while creating.
+• If we try to access index value >= given index value, we got arrayOutOfBundException.
+• Arrays are not defined by any data layer structure so we can’t run readymade methods on it.
+• To overcome this, we have collection framework under which there are ArrayList, List, HashMap, HashTable, Tree, Stack.
+• We can add new elements in run time under collections while in array we cannot.
+• Collection is a group of objects. To represent this we need certain interfaces and classes.
+• Common operations we generally do on collections are adding objects, removing objects & finding object.
+• Collection (I) is called collection interface having methods which are common throughout all collections.
+• Collections is basically a class from java.util package which contains some methods which we can use for collection objects.
+• Collection – 1. List, 2. Set, 3. Queue
+• List (I) is child of collection(I). In list Insertion order is preserved and duplicates are allowed.
+• ArrayList, LinkedList, Vector these are different classes which implements List Interface.
+• Set(I) is child of collection(I). Insertion order is not preserved & duplicates not allowed.
+• HashSet, Linked Hashset these are different classes which implements Set Interface.
+• Queue(I) is child of collection(I). We used it when we need prior to processing means first in first out concept.
+• priorityQueue is class which implements Set Interface.
+• There is one independent interface known as Map(I). In Map(I) objects are created with key and value pair. Key cannot be duplicate, but Value can be.
+• Hashmap, Linked Hashmap, Hash Table these are different classes which implements Map Interface.
+• Whatever methods present in Collection(I) are also present in their child interface i.e List, Set, Queue.
+• add(object o), addAll(Collection c), remove(Object o), removeAll(Collection c),
+retainAll(Collection c) these are some methods of Collection Interface.
+• clear(), isEmpty(), size(), contains(), conatinsAll(), toArray() are also some methods.
+• In List index play an important role because with the help of index only we can find duplicates elements.
+add(index , object), get(index), set(index, object) are methods of List Interface.
+• ArrayList al= new ArrayList(), it allows heterogenous objects also.
+• ArrayList<Str> al= new <str>(), now it can store objects of string only.
+• Collections.Sort(al) , Collections.Shuffle(al) This will sort & shuffle the objects of arraylist.
+• We can read the data with for loop, for each loop, iterator () method.
+• JVM have 2 types of memories Static pool -static data, heaps-Non static data,
+==================================================================================
