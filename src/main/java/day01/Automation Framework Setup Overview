@@ -1,0 +1,42 @@
+How does your Automation Framework work? Can you explain each component?
+
+One of the most asked Interview Question for Experienced Professionals!
+
+
+- Requirements: Project/Product Requirements which are mapped into Backlog -> Sprint -> User Stories -> Tasks -> Sub Tasks as per priority. Most used tool "Jira".
+- Manual Test Cases: Exploratory testing is conducted as part of understanding the feature, requirements etc. Test cases are created and than effectively mapped to each requirement. RTM with Forward/Backward compatibility. 
+- Test Management System (TMS): application used to create test plans and store them. Bug tracking, test execution are some common features of TMS. Most used tools -> JIRA - Xray/Zephyr, TestRails.
+
+- System Under Test (SUT): The system you are testing this could include a UI, APIs, and the underlying database.
+- API/WebServices: These are the endpoints and business logic layers (often REST or SOAP-based) that process requests and return data.
+- UI: The front-end part of the application that users interact.
+- Database: The backend data store that maintains application data.
+
+Automated Tests Overview: 
+- Internal Components & Design Patterns:
+-- Page Object Model (POM):
+Encapsulates the UI elements of a page into classes, making tests easier to maintain.
+-- Factory Pattern:
+Dynamically creates instances of objects (like API clients) based on the test environment.
+-- Singleton Pattern:
+Ensures that certain utilities (loggers) have only one instance across the entire framework.
+
+- Test Execution Engine:
+The tool that runs your automated tests (such as TestNG, JUnit, or PyTest).
+-- Manages the scheduling and execution of tests.
+-- Supports parallel execution to reduce test cycle times.
+-- Provides hooks for setup and teardown activities.
+-- Logging Framework (Log4J):
+Captures detailed logs of each test step for troubleshooting.
+-- Reporting Tools (ExtentReports, AllureReports):
+Generates HTML or PDF reports summarizing test results.
+
+Additional Modules:
+- CI/CD Integration
+Ensures that tests run automatically on code change, promoting early defect detection. Most Used Tools: GitHub Actions, Jenkins, TeamCity
+
+- Env. & Infra Management
+Supports the execution of tests by managing the underlying hardware or virtual environments.
+
+Can include virtual machines, Docker containers, Most Used Tools: AWS, Azure, or Cloud Test Management providers like: LambdaTest, BrowserStack etc.
+
