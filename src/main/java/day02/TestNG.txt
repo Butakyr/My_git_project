@@ -1,0 +1,41 @@
+𝐖𝐡𝐚𝐭 𝐢𝐬 𝐓𝐞𝐬𝐭𝐍𝐆?
+TestNG (Test Next Generation) is a testing framework inspired by JUnit and NUnit but with more powerful features.
+
+𝐖𝐡𝐲 𝐃𝐨 𝐖𝐞 𝐍𝐞𝐞𝐝 𝐓𝐞𝐬𝐭𝐍𝐆?
+- Flexible Annotations: Organize test code efficiently with annotations like @Test, @BeforeMethod, and @AfterMethod.
+- Parallel Testing: Run tests in parallel to save time, essential for large projects.
+- Data-Driven Testing: Easily test with multiple data sets using the @DataProvider annotation.
+- Test Configuration: Customize test execution with configurable suites, groups, and dependencies.
+- Reporting: Generate detailed HTML and XML reports for better insights.
+Seamless Integration: Works well with build tools like Maven and Gradle, and supports CI/CD pipelines for continuous testing.
+
+𝐇𝐨𝐰 𝐭𝐨 𝐈𝐧𝐭𝐞𝐠𝐫𝐚𝐭𝐞 𝐓𝐞𝐬𝐭𝐍𝐆 𝐰𝐢𝐭𝐡 𝐒𝐞𝐥𝐞𝐧𝐢𝐮𝐦 𝐉𝐚𝐯𝐚?
+1. Add TestNG Dependency:
+ - If your Maven Project, add the following dependency in your `pom.xml` file:
+
+ <dependency>
+ <groupId>org.testng</groupId>
+ <artifactId>testng</artifactId>
+ <version>7.8.0</version>
+ <scope>test</scope>
+ </dependency>
+
+2. Create a Test Class:
+ - Write a Selenium test case inside a class and annotate the test method with `@Test`.
+
+3. Run the Test:
+ - Right-click on the test class in your IDE and choose `Run As > TestNG Test`.
+ - Alternatively, create a TestNG XML file to define your test suite and run it.
+
+𝐖𝐡𝐚𝐭 𝐚𝐫𝐞 𝐭𝐡𝐞 𝐓𝐞𝐬𝐭𝐍𝐆 𝐇𝐨𝐨𝐤𝐬?
+TestNG hooks are special annotations that define the order in which test methods, configuration methods, and suites are executed.
+These hooks include:
+
+1. @BeforeSuite / @AfterSuite: Executed before/after all tests in the suite.
+2. @BeforeTest / @AfterTest: Executed before/after the test tag in the XML file.
+3. @BeforeClass / @AfterClass: Executed before/after the first method in the class is invoked.
+4. @BeforeMethod / @AfterMethod: Executed before/after each test method in the class.
+5. @BeforeGroups / @AfterGroups: Executed before/after specified groups of tests run.
+6. @BeforeClass / @AfterClass: Executed once before/after the first/last method in the current class.
+
+These hooks allow you to set up preconditions and perform clean-up activities in your test suite effectively.
